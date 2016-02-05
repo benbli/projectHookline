@@ -1,0 +1,38 @@
+<!-- <div class="circle-wrapper"></div> -->
+
+<svg id="svg-box" width="100%" height="325px" xmlns="http://www.w3.org/2000/svg">
+
+  <path id="svg-hanger" d="M0,100 L800,100 C785,65 840,65 820,100 L680,180 Q650,200 700,200 L980,200 Q1010,200 980,180 L840,100 L1600, 100 " stroke="black" stroke-width="4" fill="none" stroke-linejoin="round"></path>
+
+</svg>
+
+
+<div class="container">
+  <div id="title"><span>HOOKLINE</span></div>
+
+  <div id="summary-wrap">
+    <h2 class="tag-line">Be the first to know</h2>
+    <span class="brief-summary">Get a pulse on the latest trends. From street, to fashion. </span> <br /><br />
+  </div>
+
+  <section ng-controller="UsersController">
+
+    <div class="sign-up-form">
+      <form ng-submit="createUser()">
+        <!-- <label for="name">Name</label> -->
+        <input type="text" ng-model="newUser.name" placeholder="Your Name" required>
+        <!-- <label for="email">Email</label> -->
+        <input type="email" ng-model="newUser.email" placeholder="Your Email" required>
+        <button type="submit">Join</button>
+      </form>
+    </div>
+
+    <button class="learn-btn" type="submit">Learn More</button>
+  <!-- show users -->
+    <!-- <div ng-repeat="user in users">
+      <h3>{{user.name}}</h3>
+      <span>{{user.email}}</span>
+    </div> -->
+
+  </section>
+</div>

@@ -1,0 +1,108 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  padding: 0;
+  font-family: $helvetica;
+  background-color: #c4c4c4;
+  color: #fff;
+  line-height: 1.5;
+  // background-image: url('/assets/tumblr_nfajlryz591t6i20to1_1280.jpg');
+  // background: url('/assets/sophbg.jpg') no-repeat;
+  // background-size: 1200px 800px;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#title {
+  font-size: 10em;
+  font-weight: lighter;
+  @include margin(6% null 8% 5%);
+  padding-top: 4%;
+  letter-spacing: .2em;
+}
+
+.circle-wrapper {
+  // position: absolute;
+  height: 700px;
+  width: 700px;
+  border-radius: 50%;
+  background-color: #000;
+  top: -50%;
+  right: -14%;
+}
+
+button {
+  background-color: rgb(235,255,0);
+  border: 0;
+  padding: .8em;
+  height: 3em;
+  width: 98px;
+  font-family: $helvetica;
+  font-size: .95em;
+  letter-spacing: .1em;
+  font-weight: bolder;
+}
+
+input {
+  height: 2.8em;
+  width: 200px;
+  padding: .5em;
+  font-size: .8em;
+}
+
+.sign-up-form {
+  position: relative;
+  display: inline-block;
+  left: 6.5%;
+}
+
+#summary-wrap {
+  position: relative;
+  width: 400px;
+  margin-left: 5em;
+  font-family: $verdana;
+}
+
+.tag-line {
+  font-size: 3em;
+  letter-spacing: -.08em;
+  margin-bottom: .2em;
+  font-weight: 100;
+}
+
+.brief-summary {
+  font-family: 'Quicksand', sans-serif;
+  color: #000;
+}
+
+.learn-btn {
+  width: 150px;
+  position: relative;
+  margin-left: 5.2em;
+}
+
+// SVG  ********************
+#svg-box{
+  position: absolute;
+  z-index: 1;
+  top: 27.3%;
+}
+
+#svg-hanger {
+  stroke-dasharray: 3500;
+  stroke-dashoffset: 3500;
+  animation: dash 5s linear forwards;
+  margin-top: 500px;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+// SVG END *****************
