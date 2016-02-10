@@ -22,7 +22,7 @@ body {
   font-size: 10em;
   font-weight: lighter;
   @include margin(6% null 8% 5%);
-  padding-top: 4%;
+  padding-bottom: -3em;
   letter-spacing: .2em;
 }
 
@@ -90,7 +90,7 @@ input {
 #svg-box{
   position: absolute;
   z-index: 1;
-  top: 27.3%;
+  top: 30.3%;
 }
 
 #svg-hanger {
